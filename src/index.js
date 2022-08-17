@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css'
+import firstImage from './images/weslley.png';
+
+
 
 const App = ()=>{
     const nomeMedico = [
@@ -23,15 +26,15 @@ const App = ()=>{
         <h3 style={{textAlign: 'center'}}>Profissionais de saúde</h3>
         <div style={{borderRadius: 8, border: '2px #E4DDED solid' , padding:8, margin:8, display: 'flex', justifyContent: 'space-evenly'}}>
             <div className='card'>
-            <img src='/weslley.png'alt=''/>  
+            <img src={firstImage} alt=''/>  
             <p>{nomeMedico[0].nome}</p>                       
             </div>
             <div className='card'>
-            <img src='/weslley.png'alt=''/>               
+            <img src='/fabiana.png'alt=''/>               
             <p>{nomeMedico[1].nome}</p>    
             </div>
             <div className='card'>
-            <img src='/weslley.png'alt=''/>               
+            <img src='/lusia.png'alt=''/>               
             <p>{nomeMedico[2].nome}</p>    
             </div>
         </div>
