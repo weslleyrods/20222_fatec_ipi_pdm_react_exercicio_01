@@ -13,26 +13,26 @@ const App = ()=>{
         return {
             width: '100%',
             borderRadius: 8,
+            border: '1px black solid',
             backgroundColor: '#EEEEEE',
-            margin: 8,
             padding: 8,
         }
     }
     return (
     <div style={estilzarContainer()}>
         <h3 style={{textAlign: 'center'}}>Profissionais de saúde</h3>
-        <div style={{borderRadius: 8, border: '2px gray solid' , padding:8, margin:8, display: 'flex'}}>
+        <div style={{borderRadius: 8, border: '2px #E4DDED solid' , padding:8, margin:8, display: 'flex', justifyContent: 'space-evenly'}}>
             <div className='card'>
-            <img src='/weslley.png'alt=''/>               
-            {nomeMedico[0].nome}
+            <img src='/weslley.png'alt=''/>  
+            <p>{nomeMedico[0].nome}</p>                       
             </div>
             <div className='card'>
             <img src='/weslley.png'alt=''/>               
-            {nomeMedico[1].nome}
+            <p>{nomeMedico[1].nome}</p>    
             </div>
             <div className='card'>
             <img src='/weslley.png'alt=''/>               
-            {nomeMedico[2].nome}
+            <p>{nomeMedico[2].nome}</p>    
             </div>
         </div>
 
