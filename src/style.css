@@ -1,0 +1,18 @@
+
+
+.card{
+    text-align: center;
+    background-color: #E4DDED;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%
+
+}
+
+.card img{
+    border-radius: 8px;
+    width: 300px;
+    height: 170px;
+}
