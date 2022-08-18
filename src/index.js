@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './style.css'
 import firstImage from './images/weslley.png';
 
-
-
 const App = ()=>{
     const nomeMedico = [
         {nome: 'Weslley'},
@@ -12,6 +10,8 @@ const App = ()=>{
         {nome: 'Lusia'}
     ]
 
+    const secondImage = process.env.PUBLIC_URL+'fabiana.png';
+    
     const estilzarContainer = ()=>{
         return {
             width: '100%',
@@ -30,7 +30,7 @@ const App = ()=>{
             <p>{nomeMedico[0].nome}</p>                       
             </div>
             <div className='card'>
-            <img src='/fabiana.png'alt=''/>               
+            <img src={secondImage}alt=''/>               
             <p>{nomeMedico[1].nome}</p>    
             </div>
             <div className='card'>
