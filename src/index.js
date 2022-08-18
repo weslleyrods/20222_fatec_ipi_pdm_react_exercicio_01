@@ -11,6 +11,7 @@ const App = ()=>{
     ]
 
     const secondImage = process.env.PUBLIC_URL+'fabiana.png';
+    const thirdImage = `https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`;
     
     const estilzarContainer = ()=>{
         return {
@@ -34,7 +35,7 @@ const App = ()=>{
             <p>{nomeMedico[1].nome}</p>    
             </div>
             <div className='card'>
-            <img src='/lusia.png'alt=''/>               
+            <img src={thirdImage} alt=''/>               
             <p>{nomeMedico[2].nome}</p>    
             </div>
         </div>
